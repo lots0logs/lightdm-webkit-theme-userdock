@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" href="css/dock.css" />
+<link rel="stylesheet" href="css/greeter.css" />
+<link rel="stylesheet" href="css/font-awesome.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/greeter.js"></script>
+</head>
+<body>
+           <div class="wrapper">
+            <div class="dockArea">
+		<div class="dock">
+			<ul id="dockList">
+			</ul>
+		</div>
+	</div>
+	<div id="passwordArea" class="password">
+		<table border="0" align="center" color=white" margin="auto">
+			<tr>
+				<td><input id="passwordField" type="password" class="password"/></td>
+                                <td><a href="#" class="button" alt="Log In" onclick="submitPassword()">
+                                        <i class="fa fa-sign-in fa-2x" title="Log In"></i> </a></td>
+                                <td><a href="#" class="button" alt="Cancel" onclick="cancelAuthentication()">
+                                        <i class="fa fa-times fa-2x" title="Cancel"></i> </a></td>
+			</tr>
+		</table>
+	</div>
+           
+	<div id="statusArea" class="status">
+		<table border="0" align="center">
+			<tr>
+				<td><img src="img/status.png"/></td>
+				<td><span style="font-size: 100%">Authentication Failed</span></td>
+			</tr>
+		</table>
+	</div>
+	<div id="timerArea" class="timer"><img src="img/timer.gif"/></div>
+        </div>
+	<div id="actionsArea" class="actions"></div>
+	<div id="logArea" class="log"></div>
+           
+           </body>
+</html>
