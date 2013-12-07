@@ -1,11 +1,9 @@
 h1. Overview
 
-Antergos Greeter is a @lightdm-webkit@ based animated greeter theme that uses a dock-styled user list.
+User Dock is a @lightdm-webkit@ animated greeter theme that uses a dock-styled user list.
 
 
 Dock is provided by: "CSS Dock V2":http://michaelhue.com/cssdock/.
-
-h1. Installation
 
 h2. Prerequisites
 
@@ -21,30 +19,32 @@ user-session=your-session (gnome,cinnamon,xfce...)
 
 h2. Installation
 
-# Download "Antergos Greeter":https://github.com/lots0logs/lightdm-webkit-theme-antergos/zipball/master
+Arch users can install using their favorite AUR pacman wrapper. Others can install manually:
+
+# Download "User Dock Theme":https://github.com/lots0logs/lightdm-webkit-theme-antergos/zipball/master
 # Unzip it.
 # This should create a folder named like @lots0logs-lightdm-webkit-theme-antergos-28c4b13@
-# Rename this folder to @antergos@ (so that the complete path becomes @/usr/share/lightdm-webkit/themes/antergos@)
-# Edit the resource @/etc/lightdm/lightdm-webkit-greeter.conf@ and set @webkit-theme@ property to @antergos@ :
+# Rename this folder to @userdock@ (so that the complete path becomes @/usr/share/lightdm-webkit/themes/userdock@)
+# Edit the resource @/etc/lightdm/lightdm-webkit-greeter.conf@ and set @webkit-theme@ property to @userdock@ :
 
 bc. 
 theme-name=Adwaita
 #webkit-theme=default
-webkit-theme=antergos
+webkit-theme=userdock
 font-name='DejaVu Sans'
 xft-antialias=true
 xft-dpi=96
 xft-hintstyle=medium
 xft-rgba=rgb
 
-Now if you restart your computer (or at least if you restart lightdm), the antergos greeter should be activated. 
+Now if you restart your computer (or at least if you restart lightdm), the User Dock greeter theme should be activated. 
 
 h1. Uninstallation
 
-To uninstall pretty greeter, simply restore the @greeter-session@ property of the @/etc/lightdm/lightdm.conf@ file and restart your computer (or at least lightdm).
+To uninstall, simply restore the @greeter-session@ property of the @/etc/lightdm/lightdm.conf@ file and restart your computer (or at least lightdm).
 
 You may also want to :
-# Remove the folder @antergos@ created in @/usr/share/lightdm-webkit/themes/@
+# Remove the folder @userdock@ created in @/usr/share/lightdm-webkit/themes/@
 # Restore the @webkit-theme@ property of the @/etc/lightdm/lightdm-webkit-greeter.conf@ file
 
 h1. User icons management
@@ -58,4 +58,4 @@ Or
 * Create a resource named with the user's login in @/var/lib/AccountsService/icons/@
 * Edit @/var/lib/AccountsService/users/<userLogin>@ and add a property @Icon@ targeting the icon resource you just created
 
-Antergos greeter works well with 96x96 images.
+This theme works well with 96x96 images.
