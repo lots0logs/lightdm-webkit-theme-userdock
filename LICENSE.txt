@@ -1,4 +1,4 @@
-LightDM Antergos Greeter
+LightDM User Dock Greeter Theme
 Copyright (c) 2013, Antergos
 Based on LightDM Webkit Pretty Greeter
 Copyright (c) 2012, Jean-Francois Brazeau
