@@ -1,6 +1,6 @@
 [theme]
-name=Antergos Greeter
-description=Antergos Greeter Theme
+name=User Dock Greeter Theme
+description=Theme for lightdm-webkit-greeter
 engine=lightdm-webkit-greeter
 url=index.html
 session=gnome
